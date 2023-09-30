@@ -1,6 +1,6 @@
 :root {
-    --bounce-ball-main: #ADD8E6;
-    --right-side-main: #4b4225;
+    --left-main: #8AC6D0;
+    --right-side-main: #554971;
 }
 
 body {
@@ -19,8 +19,28 @@ body>div {
     margin: 0;
 }
 
+body>.line {
+    width: 1.5%;
+    height: 100vh;
+    margin: 0;
+}
+
 #left {
-    background-color: var(--bounce-ball-main);
+    background-color: var(--left-main);
+    display: flex;
+    justify-content: center;
+}
+
+#left>.logo {
+    width: 37.5vw;
+    align-self: start;
+
+    transition-duration: 650ms;
+    transition-timing-function: cubic-bezier(0, 0, 0, 1);
+}
+
+#left:hover>.logo {
+    width: 42.5vw;
 }
 
 #right {
