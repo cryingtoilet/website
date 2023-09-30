@@ -28,12 +28,13 @@ body>.line {
 #left {
     background-color: var(--left-main);
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: start;
 }
 
 #left>.logo {
     width: 37.5vw;
-    align-self: start;
+    align-self: center;
 
     transition-duration: 650ms;
     transition-timing-function: cubic-bezier(0, 0, 0, 1);
@@ -41,6 +42,17 @@ body>.line {
 
 #left:hover>.logo {
     width: 42.5vw;
+}
+
+#left>button.buy {
+    background-color: transparent;
+    width: 50%;
+    padding: 1rem;
+    align-self: center;
+    border-radius: 2rem;
+    border-style: solid;
+    font-family: 'Fredoka', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: xx-large;
 }
 
 #right {
