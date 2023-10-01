@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Bounce N' Ball</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" width=640 height=360 style="width: 640px; height: 360px; background: url('Build/072fd93c8ce2139c7ba5e13ec86d390c.jpg') center / cover"></canvas>
+    <script src="Build/WebGL.loader.js"></script>
+    <script>
+      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+        // Mobile device style: fill the whole browser client area with the game canvas:
+        var meta = document.createElement('meta');
+        meta.name = 'viewport';
+        meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
+        document.getElementsByTagName('head')[0].appendChild(meta);
+      }
+
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/306e8e1918348c6ee3c01a3c7e5928e7.data",
+        frameworkUrl: "Build/586a121f76e16cfb7c8066a2da2f31d2.js",
+        codeUrl: "Build/b17c33cb104c19be250c529b227d50f6.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "Crying Studios",
+        productName: "Bounce N' Ball",
+        productVersion: "0.4",
+        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+      });
+    </script>
+  </body>
+</html>

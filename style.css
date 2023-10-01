@@ -33,7 +33,7 @@ body>.line {
 }
 
 #left>.logo {
-    width: 37.5vw;
+    width: 40vw;
     align-self: center;
 
     transition-duration: 650ms;
@@ -41,7 +41,7 @@ body>.line {
 }
 
 #left:hover>.logo {
-    width: 42.5vw;
+    width: 45vw;
 }
 
 #left>button.access {
@@ -50,8 +50,8 @@ body>.line {
     width: 25rem;
     padding: 1rem;
     align-self: center;
-    border-radius: 2rem;
-    border-width: 0.325rem;
+    border-radius: 5rem;
+    border-width: 0.4rem;
     border-style: solid;
     border-color: #7a7a7a;
     color: #7a7a7a;
