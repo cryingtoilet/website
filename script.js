@@ -6,3 +6,5 @@ function download(url) {
     a.click()
     document.body.removeChild(a)
 }
+
+//createCrack(document.querySelector("#crack"))
