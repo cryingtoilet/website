@@ -85,10 +85,3 @@ body>.line {
 #right {
     background-color: var(--right-side-main);
 }
-
-#company-logo {
-    position: absolute;
-    bottom: 1rem;
-    left: 90%;
-    width: 12rem;
-}
